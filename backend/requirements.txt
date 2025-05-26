@@ -1,0 +1,17 @@
+fastapi[all]==0.104.1
+uvicorn[standard]==0.24.0
+sqlalchemy[asyncio]==2.0.23
+alembic==1.12.1
+asyncpg==0.29.0
+redis==5.0.1
+celery[redis]==5.3.4
+python-multipart==0.0.6
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-decouple==3.8
+aiofiles==23.2.1
+pillow==10.1.0
+python-magic==0.4.27
+httpx==0.25.2
+pytest==7.4.3
+pytest-asyncio==0.21.1
