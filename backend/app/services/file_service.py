@@ -122,9 +122,21 @@ class FileService:
         
         file_responses = []
         for file in files:
-            file_response = FileResponse.from_orm(file)
-            file_response.tags = [tag.tag for tag in file.tags]
-            file_response.download_url = f"/api/v1/files/{file.id}/download"
+            file_response = FileResponse(
+                id=file.id,
+                title=file.title,
+                filename=file.filename,
+                original_filename=file.original_filename,
+                size_bytes=file.size_bytes,
+                mime_type=file.mime_type,
+                sha256=file.sha256,
+                upload_status=file.upload_status,
+                blocked=file.blocked,
+                download_count=file.download_count,
+                created_at=file.created_at,
+                tags=[tag.tag for tag in file.tags],
+                download_url=f"/api/v1/files/{file.id}/download"
+            )
             file_responses.append(file_response)
         
         total_pages = (total + per_page - 1) // per_page
@@ -218,7 +230,8 @@ class FileService:
             count_query = count_query.where(
                 or_(
                     File.filename.ilike(search_term),
-                    File.original_filename.ilike(search_term)
+                    File.original_filename.ilike(search_term),
+                    File.title.ilike(search_term)
                 )
             )
         
@@ -227,9 +240,21 @@ class FileService:
         
         file_responses = []
         for file in files:
-            file_response = FileResponse.from_orm(file)
-            file_response.tags = [tag.tag for tag in file.tags]
-            file_response.download_url = f"/api/v1/files/{file.id}/download"
+            file_response = FileResponse(
+                id=file.id,
+                title=file.title,
+                filename=file.filename,
+                original_filename=file.original_filename,
+                size_bytes=file.size_bytes,
+                mime_type=file.mime_type,
+                sha256=file.sha256,
+                upload_status=file.upload_status,
+                blocked=file.blocked,
+                download_count=file.download_count,
+                created_at=file.created_at,
+                tags=[tag.tag for tag in file.tags],
+                download_url=f"/api/v1/files/{file.id}/download"
+            )
             file_responses.append(file_response)
         
         total_pages = (total + search_query.per_page - 1) // search_query.per_page

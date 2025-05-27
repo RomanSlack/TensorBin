@@ -2,6 +2,7 @@ import api from './api';
 
 export interface FileData {
   id: number;
+  title?: string;
   filename: string;
   original_filename: string;
   size_bytes: number;
@@ -32,9 +33,12 @@ export interface SearchQuery {
 }
 
 export const fileService = {
-  async uploadFile(file: File, tags: string[] = []): Promise<FileData> {
+  async uploadFile(file: File, tags: string[] = [], title?: string): Promise<FileData> {
     const formData = new FormData();
     formData.append('file', file);
+    if (title) {
+      formData.append('title', title);
+    }
     if (tags.length > 0) {
       formData.append('tags', tags.join(','));
     }
@@ -73,6 +77,13 @@ export const fileService = {
 
   async deleteFile(fileId: number): Promise<void> {
     await api.delete(`/files/${fileId}`);
+  },
+
+  async downloadFile(fileId: number): Promise<any> {
+    const response = await api.get(`/files/${fileId}/download`, {
+      responseType: 'blob'
+    });
+    return response;
   },
 
   getDownloadUrl(fileId: number): string {

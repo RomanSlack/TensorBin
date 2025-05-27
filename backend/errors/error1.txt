@@ -1,0 +1,574 @@
+Console frontend
+inpage.js:2283 Uncaught (in promise) TypeError: Cannot read properties of null (reading 'type')
+    at mr.<anonymous> (inpage.js:2283:37280)
+    at Generator.next (<anonymous>)
+    at ke (inpage.js:2283:36168)
+(anonymous) @ inpage.js:2283
+ke @ inpage.js:2283
+Promise.then
+Mn @ inpage.js:2283
+ke @ inpage.js:2283
+Promise.then
+Mn @ inpage.js:2283
+(anonymous) @ inpage.js:2283
+Nm @ inpage.js:2283
+boot @ inpage.js:2283
+(anonymous) @ inpage.js:2283
+setTimeout
+start @ inpage.js:2283
+(anonymous) @ inpage.js:2283
+start @ inpage.js:2283
+(anonymous) @ inpage.js:2307
+(anonymous) @ inpage.js:2307
+yD @ inpage.js:2307
+bD @ inpage.js:2307
+(anonymous) @ inpage.js:2307
+(anonymous) @ inpage.js:2307
+(anonymous) @ inpage.js:2307Understand this error
+dashboard:1 Access to XMLHttpRequest at 'http://localhost:8000/api/v1/files/?page=1&per_page=20' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+page.tsx:37 Failed to load files: AxiosError {message: 'Network Error', name: 'AxiosError', code: 'ERR_NETWORK', config: {…}, request: XMLHttpRequest, …}
+overrideMethod @ hook.js:608
+window.console.error @ app-index.js:33
+console.error @ hydration-error-info.js:63
+loadFiles @ page.tsx:37
+await in loadFiles
+eval @ page.tsx:25
+commitHookEffectListMount @ react-dom.development.js:21102
+commitHookPassiveMountEffects @ react-dom.development.js:23154
+commitPassiveMountOnFiber @ react-dom.development.js:23259
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23267
+commitPassiveMountEffects @ react-dom.development.js:23225
+flushPassiveEffectsImpl @ react-dom.development.js:26497
+flushPassiveEffects @ react-dom.development.js:26438
+eval @ react-dom.development.js:26172
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534Understand this error
+files.ts:56
+
+
+           GET http://localhost:8000/api/v1/files/?page=1&per_page=20 net::ERR_FAILED 500 (Internal Server Error)
+dispatchXhrRequest @ xhr.js:206
+xhr @ xhr.js:26
+dispatchRequest @ dispatchRequest.js:61
+Promise.then
+_request @ Axios.js:172
+request @ Axios.js:49
+Axios.<computed> @ Axios.js:222
+wrap @ bind.js:9
+getUserFiles @ files.ts:56
+loadFiles @ page.tsx:31
+eval @ page.tsx:25
+commitHookEffectListMount @ react-dom.development.js:21102
+commitHookPassiveMountEffects @ react-dom.development.js:23154
+commitPassiveMountOnFiber @ react-dom.development.js:23259
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23256
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23370
+recursivelyTraversePassiveMountEffects @ react-dom.development.js:23237
+commitPassiveMountOnFiber @ react-dom.development.js:23267
+commitPassiveMountEffects @ react-dom.development.js:23225
+flushPassiveEffectsImpl @ react-dom.development.js:26497
+flushPassiveEffects @ react-dom.development.js:26438
+eval @ react-dom.development.js:26172
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534Understand this error
+dashboard:1 Access to XMLHttpRequest at 'http://localhost:8000/api/v1/files/?page=1&per_page=20' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+page.tsx:37 Failed to load files: AxiosError {message: 'Network Error', name: 'AxiosError', code: 'ERR_NETWORK', config: {…}, request: XMLHttpRequest, …}
+overrideMethod @ hook.js:608
+window.console.error @ app-index.js:33
+console.error @ hydration-error-info.js:63
+loadFiles @ page.tsx:37
+await in loadFiles
+eval @ page.tsx:25
+commitHookEffectListMount @ react-dom.development.js:21102
+invokePassiveEffectMountInDEV @ react-dom.development.js:23980
+invokeEffectsInDev @ react-dom.development.js:26852
+legacyCommitDoubleInvokeEffectsInDEV @ react-dom.development.js:26835
+commitDoubleInvokeEffectsInDEV @ react-dom.development.js:26816
+flushPassiveEffectsImpl @ react-dom.development.js:26514
+flushPassiveEffects @ react-dom.development.js:26438
+eval @ react-dom.development.js:26172
+workLoop @ scheduler.development.js:256
+flushWork @ scheduler.development.js:225
+performWorkUntilDeadline @ scheduler.development.js:534Understand this error
+files.ts:56
+
+
+           GET http://localhost:8000/api/v1/files/?page=1&per_page=20 net::ERR_FAILED 500 (Internal Server Error)
+
+
+
+(TensorBin) roman@roman-Inspiron:~/TensorBin/backend$ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+INFO:     Will watch for changes in these directories: ['/home/roman/TensorBin/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [17328] using WatchFiles
+INFO:     Started server process [17330]
+INFO:     Waiting for application startup.
+INFO:app.main:Starting up TensorBin API...
+INFO:     Application startup complete.
+2025-05-26 21:59:35,319 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+INFO:sqlalchemy.engine.Engine:select pg_catalog.version()
+2025-05-26 21:59:35,319 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2025-05-26 21:59:35,324 INFO sqlalchemy.engine.Engine select current_schema()
+INFO:sqlalchemy.engine.Engine:select current_schema()
+2025-05-26 21:59:35,324 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2025-05-26 21:59:35,330 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+INFO:sqlalchemy.engine.Engine:show standard_conforming_strings
+2025-05-26 21:59:35,330 INFO sqlalchemy.engine.Engine [raw sql] ()
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+2025-05-26 21:59:35,334 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-05-26 21:59:35,345 INFO sqlalchemy.engine.Engine SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+2025-05-26 21:59:35,345 INFO sqlalchemy.engine.Engine [generated in 0.00033s] (1,)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00033s] (1,)
+2025-05-26 21:59:35,357 INFO sqlalchemy.engine.Engine SELECT files.id, files.user_id, files.title, files.filename, files.original_filename, files.file_path, files.size_bytes, files.mime_type, files.sha256, files.upload_status, files.nsfw_score, files.blocked, files.download_count, files.created_at, files.updated_at
+FROM files
+WHERE files.user_id = $1::INTEGER ORDER BY files.created_at DESC
+ LIMIT $2::INTEGER OFFSET $3::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT files.id, files.user_id, files.title, files.filename, files.original_filename, files.file_path, files.size_bytes, files.mime_type, files.sha256, files.upload_status, files.nsfw_score, files.blocked, files.download_count, files.created_at, files.updated_at
+FROM files
+WHERE files.user_id = $1::INTEGER ORDER BY files.created_at DESC
+ LIMIT $2::INTEGER OFFSET $3::INTEGER
+2025-05-26 21:59:35,357 INFO sqlalchemy.engine.Engine [generated in 0.00045s] (1, 20, 0)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00045s] (1, 20, 0)
+2025-05-26 21:59:35,362 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-05-26 21:59:35,363 INFO sqlalchemy.engine.Engine SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+2025-05-26 21:59:35,363 INFO sqlalchemy.engine.Engine [cached since 0.01772s ago] (1,)
+INFO:sqlalchemy.engine.Engine:[cached since 0.01772s ago] (1,)
+2025-05-26 21:59:35,368 INFO sqlalchemy.engine.Engine SELECT tags.file_id AS tags_file_id, tags.id AS tags_id, tags.tag AS tags_tag
+FROM tags
+WHERE tags.file_id IN ($1::INTEGER)
+INFO:sqlalchemy.engine.Engine:SELECT tags.file_id AS tags_file_id, tags.id AS tags_id, tags.tag AS tags_tag
+FROM tags
+WHERE tags.file_id IN ($1::INTEGER)
+2025-05-26 21:59:35,368 INFO sqlalchemy.engine.Engine [generated in 0.00042s] (2,)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00042s] (2,)
+2025-05-26 21:59:35,375 INFO sqlalchemy.engine.Engine SELECT count(files.id) AS count_1
+FROM files
+WHERE files.user_id = $1::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT count(files.id) AS count_1
+FROM files
+WHERE files.user_id = $1::INTEGER
+2025-05-26 21:59:35,375 INFO sqlalchemy.engine.Engine [generated in 0.00022s] (1,)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00022s] (1,)
+INFO:     127.0.0.1:45030 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+2025-05-26 21:59:35,376 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+2025-05-26 21:59:35,378 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:app.main:Global exception: 1 validation error for FileResponse
+tags.0
+  Input should be a valid string [type=string_type, input_value=<app.models.tag.Tag object at 0x79ae70333050>, input_type=Tag]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+INFO:     127.0.0.1:45044 - "GET /api/v1/files/?page=1&per_page=20 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/TensorBin/backend/app/routers/files.py", line 41, in get_user_files
+    return await FileService.get_user_files(db, current_user, page, per_page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/TensorBin/backend/app/services/file_service.py", line 125, in get_user_files
+    file_response = FileResponse.from_orm(file)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/pydantic/main.py", line 1440, in from_orm
+    return cls.model_validate(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/pydantic/main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for FileResponse
+tags.0
+  Input should be a valid string [type=string_type, input_value=<app.models.tag.Tag object at 0x79ae70333050>, input_type=Tag]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-05-26 21:59:35,392 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-05-26 21:59:35,393 INFO sqlalchemy.engine.Engine SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+2025-05-26 21:59:35,393 INFO sqlalchemy.engine.Engine [cached since 0.04779s ago] (1,)
+INFO:sqlalchemy.engine.Engine:[cached since 0.04779s ago] (1,)
+INFO:     127.0.0.1:45030 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+2025-05-26 21:59:35,398 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+2025-05-26 21:59:35,398 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-05-26 21:59:35,399 INFO sqlalchemy.engine.Engine SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT users.id, users.email, users.password_hash, users.tier, users.storage_used, users.is_active, users.is_verified, users.created_at, users.updated_at
+FROM users
+WHERE users.id = $1::INTEGER
+2025-05-26 21:59:35,399 INFO sqlalchemy.engine.Engine [cached since 0.05366s ago] (1,)
+INFO:sqlalchemy.engine.Engine:[cached since 0.05366s ago] (1,)
+2025-05-26 21:59:35,403 INFO sqlalchemy.engine.Engine SELECT files.id, files.user_id, files.title, files.filename, files.original_filename, files.file_path, files.size_bytes, files.mime_type, files.sha256, files.upload_status, files.nsfw_score, files.blocked, files.download_count, files.created_at, files.updated_at
+FROM files
+WHERE files.user_id = $1::INTEGER ORDER BY files.created_at DESC
+ LIMIT $2::INTEGER OFFSET $3::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT files.id, files.user_id, files.title, files.filename, files.original_filename, files.file_path, files.size_bytes, files.mime_type, files.sha256, files.upload_status, files.nsfw_score, files.blocked, files.download_count, files.created_at, files.updated_at
+FROM files
+WHERE files.user_id = $1::INTEGER ORDER BY files.created_at DESC
+ LIMIT $2::INTEGER OFFSET $3::INTEGER
+2025-05-26 21:59:35,403 INFO sqlalchemy.engine.Engine [cached since 0.04708s ago] (1, 20, 0)
+INFO:sqlalchemy.engine.Engine:[cached since 0.04708s ago] (1, 20, 0)
+2025-05-26 21:59:35,406 INFO sqlalchemy.engine.Engine SELECT tags.file_id AS tags_file_id, tags.id AS tags_id, tags.tag AS tags_tag
+FROM tags
+WHERE tags.file_id IN ($1::INTEGER)
+INFO:sqlalchemy.engine.Engine:SELECT tags.file_id AS tags_file_id, tags.id AS tags_id, tags.tag AS tags_tag
+FROM tags
+WHERE tags.file_id IN ($1::INTEGER)
+2025-05-26 21:59:35,407 INFO sqlalchemy.engine.Engine [cached since 0.03895s ago] (2,)
+INFO:sqlalchemy.engine.Engine:[cached since 0.03895s ago] (2,)
+2025-05-26 21:59:35,410 INFO sqlalchemy.engine.Engine SELECT count(files.id) AS count_1
+FROM files
+WHERE files.user_id = $1::INTEGER
+INFO:sqlalchemy.engine.Engine:SELECT count(files.id) AS count_1
+FROM files
+WHERE files.user_id = $1::INTEGER
+2025-05-26 21:59:35,410 INFO sqlalchemy.engine.Engine [cached since 0.03516s ago] (1,)
+INFO:sqlalchemy.engine.Engine:[cached since 0.03516s ago] (1,)
+2025-05-26 21:59:35,412 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+ERROR:app.main:Global exception: 1 validation error for FileResponse
+tags.0
+  Input should be a valid string [type=string_type, input_value=<app.models.tag.Tag object at 0x79ae6f9a1d60>, input_type=Tag]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+INFO:     127.0.0.1:45052 - "GET /api/v1/files/?page=1&per_page=20 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/TensorBin/backend/app/routers/files.py", line 41, in get_user_files
+    return await FileService.get_user_files(db, current_user, page, per_page)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/TensorBin/backend/app/services/file_service.py", line 125, in get_user_files
+    file_response = FileResponse.from_orm(file)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/pydantic/main.py", line 1440, in from_orm
+    return cls.model_validate(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roman/miniconda3/envs/TensorBin/lib/python3.12/site-packages/pydantic/main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for FileResponse
+tags.0
+  Input should be a valid string [type=string_type, input_value=<app.models.tag.Tag object at 0x79ae6f9a1d60>, input_type=Tag]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type

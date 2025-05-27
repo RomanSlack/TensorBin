@@ -11,24 +11,33 @@ interface FileUploadProps {
 export default function FileUpload({ onUploadComplete }: FileUploadProps) {
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState<Record<string, number>>({});
+  const [title, setTitle] = useState<string>('');
   const [tags, setTags] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
 
   const onDrop = useCallback(async (acceptedFiles: File[]) => {
+    if (!acceptedFiles || acceptedFiles.length === 0) {
+      return;
+    }
+
     setUploading(true);
     setError(null);
 
     const tagList = tags.split(',').map(tag => tag.trim()).filter(tag => tag.length > 0);
 
     for (const file of acceptedFiles) {
+      if (!file || !file.name) {
+        continue;
+      }
+      
       try {
         setUploadProgress(prev => ({ ...prev, [file.name]: 0 }));
         
-        await fileService.uploadFile(file, tagList);
+        await fileService.uploadFile(file, tagList, title || undefined);
         
         setUploadProgress(prev => ({ ...prev, [file.name]: 100 }));
       } catch (err: any) {
-        setError(err.response?.data?.detail || `Failed to upload ${file.name}`);
+        setError(err?.response?.data?.detail || `Failed to upload ${file.name}`);
         setUploadProgress(prev => {
           const newProgress = { ...prev };
           delete newProgress[file.name];
@@ -38,22 +47,45 @@ export default function FileUpload({ onUploadComplete }: FileUploadProps) {
     }
 
     setUploading(false);
+    setTitle('');
     setTags('');
     
     setTimeout(() => {
       setUploadProgress({});
       onUploadComplete?.();
     }, 2000);
-  }, [tags, onUploadComplete]);
+  }, [title, tags, onUploadComplete]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     disabled: uploading,
     maxSize: 10 * 1024 * 1024 * 1024, // 10GB
+    accept: {
+      'image/*': ['.gif', '.png', '.jpeg', '.jpg'],
+      'application/octet-stream': ['.safetensors', '.ckpt', '.pth', '.bin', '.pt']
+    },
+    noClick: false,
+    noKeyboard: false,
+    preventDropOnDocument: true
   });
 
   return (
     <div className="w-full max-w-2xl mx-auto">
+      <div className="mb-4">
+        <label htmlFor="title" className="block text-sm text-gray-700 mb-2">
+          Title (optional)
+        </label>
+        <input
+          type="text"
+          id="title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="My awesome model"
+          className="w-full px-3 py-2 border border-gray-300 text-sm focus:outline-none focus:border-gray-500"
+          disabled={uploading}
+        />
+      </div>
+
       <div className="mb-6">
         <label htmlFor="tags" className="block text-sm text-gray-700 mb-2">
           Tags (comma-separated)
@@ -63,12 +95,12 @@ export default function FileUpload({ onUploadComplete }: FileUploadProps) {
           id="tags"
           value={tags}
           onChange={(e) => setTags(e.target.value)}
-          placeholder="lora, checkpoint, anime, realistic"
+          placeholder="gif, png, jpeg, jpg, anime, realistic"
           className="w-full px-3 py-2 border border-gray-300 text-sm focus:outline-none focus:border-gray-500"
           disabled={uploading}
         />
         <p className="text-xs text-gray-500 mt-1">
-          Help others find your models with relevant tags
+          Help others find your uploads with relevant tags
         </p>
       </div>
 
@@ -114,7 +146,7 @@ export default function FileUpload({ onUploadComplete }: FileUploadProps) {
               Drop files or click to upload
             </p>
             <p className="text-xs text-gray-500">
-              .safetensors, .ckpt, .pth, .bin, .pt files up to 10GB
+              Images (gif, png, jpeg, jpg) and models (.safetensors, .ckpt, .pth, .bin, .pt) up to 10GB
             </p>
           </div>
         )}

@@ -84,6 +84,13 @@ export default function Navbar() {
                 <span>{formatStorageUsed(user.storage_used, user.storage_limit)}</span>
               </div>
 
+              <a
+                href="/dashboard"
+                className="px-3 py-1 border border-gray-300 text-gray-700 hover:bg-gray-50 text-xs"
+              >
+                Upload
+              </a>
+
               <div className="relative">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
