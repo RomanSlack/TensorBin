@@ -14,6 +14,7 @@ router = APIRouter(prefix="/files", tags=["files"])
 @router.post("/upload", response_model=FileResponseSchema)
 async def upload_file(
     file: UploadFile = File(...),
+    title: Optional[str] = Form(None),
     tags: Optional[str] = Form(None),
     db: AsyncSession = Depends(get_database),
     current_user: User = Depends(get_current_user)
@@ -22,7 +23,7 @@ async def upload_file(
     if tags:
         tag_list = [tag.strip() for tag in tags.split(",") if tag.strip()]
     
-    uploaded_file = await FileService.upload_file(db, current_user, file, tag_list)
+    uploaded_file = await FileService.upload_file(db, current_user, file, tag_list, title)
     
     file_response = FileResponseSchema.from_orm(uploaded_file)
     file_response.tags = tag_list

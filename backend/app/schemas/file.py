@@ -3,11 +3,13 @@ from datetime import datetime
 from typing import Optional, List
 
 class FileUpload(BaseModel):
+    title: Optional[str] = None
     filename: str
     tags: Optional[List[str]] = []
 
 class FileResponse(BaseModel):
     id: int
+    title: Optional[str]
     filename: str
     original_filename: str
     size_bytes: int

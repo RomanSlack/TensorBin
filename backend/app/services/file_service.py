@@ -24,7 +24,8 @@ class FileService:
         db: AsyncSession, 
         user: User, 
         file: UploadFile, 
-        tags: List[str] = None
+        tags: List[str] = None,
+        title: Optional[str] = None
     ) -> File:
         if not is_allowed_file(file.filename):
             raise HTTPException(
@@ -70,6 +71,7 @@ class FileService:
         
         db_file = File(
             user_id=user.id,
+            title=title,
             filename=file.filename,
             original_filename=file.filename,
             file_path=file_path,
@@ -182,7 +184,8 @@ class FileService:
             query = query.where(
                 or_(
                     File.filename.ilike(search_term),
-                    File.original_filename.ilike(search_term)
+                    File.original_filename.ilike(search_term),
+                    File.title.ilike(search_term)
                 )
             )
         

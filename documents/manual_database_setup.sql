@@ -1,6 +1,5 @@
 -- TensorBin Database Manual Setup
 -- Run these commands in PostgreSQL to create the database schema manually
--- Alternative to running alembic migrations
 
 -- Connect to the tensorbin database
 \c tensorbin;

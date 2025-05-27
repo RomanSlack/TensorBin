@@ -3,8 +3,8 @@ from pathlib import Path
 import os
 
 class Settings:
-    DATABASE_URL: str = config("DATABASE_URL", default="postgresql+asyncpg://tensorbin:tensorbin@localhost:5432/tensorbin")
-    REDIS_URL: str = config("REDIS_URL", default="redis://localhost:6379/0")
+    DATABASE_URL: str = config("DATABASE_URL", default="postgresql+asyncpg://tensorbin:tensorbin@localhost:5433/tensorbin")
+    REDIS_URL: str = config("REDIS_URL", default="redis://localhost:6380/0")
     SECRET_KEY: str = config("SECRET_KEY", default="dev-secret-key-change-in-production")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = config("ACCESS_TOKEN_EXPIRE_MINUTES", default=30, cast=int)
